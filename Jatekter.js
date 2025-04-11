@@ -1,5 +1,6 @@
 import Infopanel from "./Infopanel.js";
 import Lampa from "./Lampa.js";
+import {LISTA} from "adat.js";
 
 export default class Jatekter{
     #allapotok
@@ -32,6 +33,7 @@ export default class Jatekter{
         });
     }   
 
+   /*
     visszaall()
     {
        
@@ -41,6 +43,7 @@ export default class Jatekter{
            console.log(index)
         }
     }
+   */
 
     megszamlal()
     {
@@ -119,6 +122,15 @@ export default class Jatekter{
             }, 500);
 
         }
+    }
+/*
+    getAllapot(){
+        return this.#allapotok
+    }
+*/
+    setAllapot(beallitAllapot){
+        this.#allapotok= beallitAllapot
+        beallitAllapot=adat.LISTA.indexLista
     }
 }
 
